@@ -9,7 +9,7 @@ auth.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
 user = "lucasAvilss"
-limit = 1000
+limit = 5000
 
 tweets = tweepy.Cursor(api.user_timeline,screen_name = user,count = 200, tweet_mode='extended').items(limit)
 
