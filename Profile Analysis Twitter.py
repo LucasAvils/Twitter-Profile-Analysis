@@ -21,7 +21,6 @@ data = []
 
 for tweet in tweets:
     text = tweet.full_text
-    print(text)
     text = remove_emoji(text)
     b = tb.TextBlob(text)
     try:
